@@ -1,0 +1,7 @@
+FROM adoptopenjdk/openjdk:8-jdk-alpine
+
+EXPOSE 8080
+
+COPY target/springDocker-0.0.1-SNAPSHOT.jar
+
+CMD ["java", "-jar", "app.jar"]
